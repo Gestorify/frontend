@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --background: #111827;
+  --foreground: #ffffff;
+  --primary: #3B82F6;
+  --primary-hover: #2563EB;
+  --card-bg: #1F2937;
+  --sidebar-bg: #1E293B;
+  --border-color: #374151;
+}
+
+/* Configurações de fonte e cores */
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-manrope), system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+}
+
+/* Componentes comuns */
+@layer components {
+  .btn-primary {
+    background-color: var(--primary);
+    color: white;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--primary-hover);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111827;
+    --foreground: #ffffff;
+  }
+}
