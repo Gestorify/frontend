@@ -1,9 +1,7 @@
 "use client";
 
-import { useState } from 'react';
-
 export function TopBar() {
-  const [dateRange, setDateRange] = useState('17/04 - 17/04');
+  const dateRange = '17/04 - 17/04';
   
   return (
     <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
